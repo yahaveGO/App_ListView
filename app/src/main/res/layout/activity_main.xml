@@ -7,6 +7,28 @@
     android:orientation="vertical"
     tools:context=".MainActivity" >
 
+    <Button
+        android:id="@+id/botonSingle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="botonSingle" />
+
+    <Button
+        android:id="@+id/botonMultiple"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="botonMultiple" />
+
+    <Button
+        android:id="@+id/botonNoneChise"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="botonNoneChise" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
     <ListView
         android:id="@+id/listView"
         android:layout_width="match_parent"

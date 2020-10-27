@@ -1,3 +1,22 @@
 <resources>
-    <string name="app_name">AppListView</string>
+    <string name="app_name">App List View X</string>
+
+    <string-array name="entidades_federativas">
+    <item>Campeche</item>
+    <item>Sonora</item>
+    <item>Zacatecas</item>
+    <item>Sinaloa</item>
+    <item>Michoacán</item>
+    <item>Puebla</item>
+    <item>Oaxaca</item>
+    <item>Yucatán</item>
+    <item>Tlaxcala</item>
+    <item>Guanajuato</item>
+    <item>Tamaulipas</item>
+    <item>Veracruz</item>
+    <item>Guerrero</item>
+    <item>Jalisco</item>
+    <item>Durango</item>
+    </string-array>
+
 </resources>

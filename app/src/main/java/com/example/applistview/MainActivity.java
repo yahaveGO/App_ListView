@@ -2,6 +2,7 @@ package com.example.applistview;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -20,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         listView = findViewById(R.id.listView);
         //estados=Arrays.asList(getResources().getStringArray(R.array.entidades_federativas));
         estados = Arrays.asList("Campeche","Zacatecas","Michoacan","Jalisco","Durango","Veracruz");
@@ -31,6 +33,30 @@ public class MainActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 String texto = (String) parent.getAdapter().getItem(position);
                 Toast.makeText(getApplicationContext(), texto, Toast.LENGTH_LONG).show();
+            }
+        });
+
+        findViewById(R.id.botonNoneChise).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(getApplicationContext(),NoneChoiceActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        findViewById(R.id.botonSingle).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(getApplicationContext(),SingleChoiceActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        findViewById(R.id.botonMultiple).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(getApplicationContext(),MultipleChoiceActivity.class);
+                startActivity(intent);
             }
         });
 
