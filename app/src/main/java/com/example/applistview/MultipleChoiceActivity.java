@@ -23,10 +23,12 @@ public class MultipleChoiceActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_multiple_choice);
 
-        selecciones = new ArrayList<>();
-        miLista  = findViewById(R.id.listaMultiple);
-        String[] datos = getResources().getStringArray(R.array.entidades_federativas);
+        selecciones     = new ArrayList<>();
+        miLista         = findViewById(R.id.listaMultiple);
+        String[] datos  = getResources().getStringArray(R.array.entidades_federativas);
+
         ArrayAdapter<String> adaptador = new ArrayAdapter<>(this, android.R.layout.simple_list_item_multiple_choice,datos);
+
         miLista.setAdapter(adaptador);
         miLista.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override

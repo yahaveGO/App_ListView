@@ -8,22 +8,56 @@
     tools:context=".MainActivity" >
 
     <Button
+        android:id="@+id/botonNoneChoise"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="50px"
+        android:layout_marginTop="200px"
+        android:layout_marginRight="50px"
+        android:background="@color/colorPrimary"
+        android:paddingTop="50px"
+        android:paddingBottom="50px"
+        android:text="Boton None Choise"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        />
+
+    <Button
         android:id="@+id/botonSingle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="botonSingle" />
+        android:layout_gravity="center"
+        android:layout_marginLeft="50px"
+        android:layout_marginTop="200px"
+        android:layout_marginRight="50px"
+        android:background="@color/colorPrimary"
+        android:paddingTop="50px"
+        android:paddingBottom="50px"
+        android:text="Boton Single"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        />
 
     <Button
         android:id="@+id/botonMultiple"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="botonMultiple" />
+        android:layout_gravity="center"
+        android:layout_marginLeft="50px"
+        android:layout_marginTop="200px"
+        android:layout_marginRight="50px"
+        android:background="@color/colorPrimary"
+        android:paddingTop="50px"
+        android:paddingBottom="50px"
+        android:text="Boton Multiple"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        />
 
-    <Button
-        android:id="@+id/botonNoneChise"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="botonNoneChise" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"

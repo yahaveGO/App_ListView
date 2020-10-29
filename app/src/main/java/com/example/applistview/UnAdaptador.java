@@ -16,7 +16,7 @@ public class UnAdaptador extends BaseAdapter {
 
     public UnAdaptador(Context context, int layout, List<String> estados){
         this.context = context;
-        this.layout = layout;
+        this.layout  = layout;
         this.estados = estados;
     }
 

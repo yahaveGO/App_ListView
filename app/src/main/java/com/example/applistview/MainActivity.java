@@ -22,28 +22,28 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        listView = findViewById(R.id.listView);
-        //estados=Arrays.asList(getResources().getStringArray(R.array.entidades_federativas));
-        estados = Arrays.asList("Campeche","Zacatecas","Michoacan","Jalisco","Durango","Veracruz");
-        //ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, estados);
+        listView    = findViewById(R.id.listView);
+        estados     = Arrays.asList("Campeche","Zacatecas","Michoacan","Jalisco","Durango","Veracruz");
+
         UnAdaptador adapter = new UnAdaptador(this, R.layout.list_item, estados);
+
         listView.setAdapter(adapter);
-       listView.setOnItemClickListener(new AdapterView.OnItemClickListener(){
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener(){
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 String texto = (String) parent.getAdapter().getItem(position);
                 Toast.makeText(getApplicationContext(), texto, Toast.LENGTH_LONG).show();
             }
         });
-
-        findViewById(R.id.botonNoneChise).setOnClickListener(new View.OnClickListener() {
+        //__________________________________________________________________________________________
+        findViewById(R.id.botonNoneChoise).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent=new Intent(getApplicationContext(),NoneChoiceActivity.class);
                 startActivity(intent);
             }
         });
-
+        //__________________________________________________________________________________________
         findViewById(R.id.botonSingle).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
+        //__________________________________________________________________________________________
         findViewById(R.id.botonMultiple).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -59,6 +59,6 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
+        //__________________________________________________________________________________________
     }
 }
